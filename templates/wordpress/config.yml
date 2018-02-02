@@ -1,5 +1,5 @@
-name: Wordpress
+name: GIOTTO DASHBOARD
 description: |
-  Blog tool, publishing platform and CMS DSC
-version: v0.1-educaas1
-category: Blogging
+  Giotto Dashboard
+version: v1.0
+category: IoT
