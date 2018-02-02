@@ -5,3 +5,9 @@ nifi-master:
   tty: true
   image: flink:latest
   stdin_open: true
+  expose:
+    - "6123"
+  command: jobmanager
+  environment:
+    - JOB_MANAGER_RPC_ADDRESS=jobmanager
+
