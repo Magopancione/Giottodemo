@@ -1,6 +1,6 @@
 dashboard-vip:
   ports:
-  - "${public_port}:80"
+  - "80:8080"
   restart: always
   tty: true
   image: rancher/load-balancer-service
