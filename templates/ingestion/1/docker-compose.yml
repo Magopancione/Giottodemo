@@ -5,6 +5,8 @@ nifi-master:
   - 8443:8443/tcp
   - 2882:2882/tcp
   restart: always
+  labels:
+    io.rancher.scheduler.affinity:host_label: nifi_master=true
   image: apache/nifi:1.4.0
   stdin_open: true
   net: host
