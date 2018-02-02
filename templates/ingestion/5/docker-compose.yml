@@ -1,11 +1,7 @@
 nifi-master:
   ports:
-  - 80:8080/tcp
+  - 8080:8080/tcp
   restart: always
-  environment:
-    PASSWORD: Pa22word
-    ISMANAGER: 'true'
   tty: true
   image: apache/nifi:1.4.0
   stdin_open: true
-  net: host
