@@ -2,6 +2,6 @@
   name: "nifi"
   version: "1.7.1-rancher1"
   description: "Hadoop + Yarn"
-  minimum_rancher_version: v1000.46.0
+  minimum_rancher_version: v10.0.2
 nifi-master:
   scale: 1
