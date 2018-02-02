@@ -1,6 +1,6 @@
 nifi-master:
   ports:
-  - 8181:8181/tcp
+  - 8081:8081/tcp
   restart: always
   tty: true
   image: flink:latest
