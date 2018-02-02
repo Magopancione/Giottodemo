@@ -1,12 +1,8 @@
 nifi-master:
   ports:
-  - 8080:8080/tcp
-  - 8081:8081/tcp
-  - 8443:8443/tcp
-  - 2882:2882/tcp
+  - 8881:8081/tcp
+  - 8882:8080/tcp
   restart: always
-  labels:
-    io.rancher.scheduler.affinity:host_label: nifi_master=true
   image: apache/nifi:1.4.0
   stdin_open: true
   net: host
