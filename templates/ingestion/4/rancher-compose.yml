@@ -1,7 +1,10 @@
 .catalog:
-  name: "nifi"
-  version: "1.7.1-rancher1"
-  description: "Hadoop + Yarn"
-  minimum_rancher_version: v10.0.2
+  name: Flink
+  version: 10.0.0
+  description: |
+    Flink cluster
+  minimum_rancher_version: v0.59.0
+  maintainer: "Patrick Wiener <patrick.wiener@hs-karlsruhe.de>"
+  uuid: flink-0
 nifi-master:
   scale: 1
