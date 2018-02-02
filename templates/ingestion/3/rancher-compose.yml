@@ -1,0 +1,24 @@
+.catalog:
+  name: "Dashboard"
+  version: "14.6.3-rancher1"
+  description: "Kibana: Explore & Visualize Your Data"
+  questions:
+    - variable: "elasticsearch_source"
+      description: "Link to elasticsearch service or stack/service"
+      label: "Elasticsearch source"
+      type: "service"
+      required: false
+      default: "es/elasticsearch-clients"
+    - variable: "public_port"
+      label: "Public Port"
+      description: "Unique public port for Kibana"
+      type: "int"
+      default: 80
+      required: false
+
+nginx-proxy:
+  metadata:
+    nginx:
+      conf:
+        servername: "dashboard"
+        upstream_port: 5601
