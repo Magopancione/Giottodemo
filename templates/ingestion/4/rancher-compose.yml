@@ -1,6 +1,6 @@
 .catalog:
   name: Flink
-  version: 10.0.0
+  version: 10.0.1
   description: |
     Flink cluster
   minimum_rancher_version: v0.59.0
