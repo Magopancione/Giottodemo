@@ -1,5 +1,5 @@
-name: GIOTTO DASHBOARD
+name: GIOTTODASHBOARD
 description: |
-  Giotto Dashboard
-version: v1.0
-category: IoT
+  Blog tool, publishing platform and CMS DSC
+version: v0.1-educaas1
+category: Blogging
