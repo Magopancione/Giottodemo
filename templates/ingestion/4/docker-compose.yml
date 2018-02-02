@@ -5,8 +5,6 @@ nifi-master:
   environment:
     PASSWORD: Pa22word
     ISMANAGER: 'true'
-  labels:
-    io.rancher.scheduler.affinity:host_label: nifi_master=true
   tty: true
   image: clemenko/nifi
   stdin_open: true
