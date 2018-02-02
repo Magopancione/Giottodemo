@@ -1,0 +1,15 @@
+nifi-master:
+  ports:
+  - 80:8080/tcp
+  - 90:9000/tcp
+  - 90:9000/udp
+  restart: always
+  environment:
+    PASSWORD: Pa22word
+    ISMANAGER: 'true'
+  labels:
+    io.rancher.scheduler.affinity:host_label: nifi_master=true
+  tty: true
+  image: clemenko/nifi
+  stdin_open: true
+  net: host
