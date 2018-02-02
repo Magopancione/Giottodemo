@@ -18,7 +18,7 @@ nginx-proxy:
     - nginx-proxy-conf
   labels:
     io.rancher.container.hostname_override: container_name
-    io.rancher.sidekicks: nginx-proxy-conf,dashboad4
+    io.rancher.sidekicks: nginx-proxy-conf,dashboard4
   external_links:
     - ${elasticsearch_source}:elasticsearch
 dashboard4:
