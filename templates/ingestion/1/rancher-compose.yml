@@ -7,7 +7,7 @@
       description: "Link to elasticsearch service or stack/service"
       label: "Elasticsearch source"
       type: "service"
-      required: true
+      required: false
       default: "es/elasticsearch-clients"
 nginx-proxy:
   metadata:
