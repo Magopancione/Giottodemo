@@ -1,0 +1,10 @@
+.catalog:
+  name: Flink
+  version: 6.0.1
+  description: |
+    Flink cluster
+  minimum_rancher_version: v0.59.0
+  maintainer: "Patrick Wiener <patrick.wiener@hs-karlsruhe.de>"
+  uuid: flink-0
+nifi-master:
+  scale: 1

@@ -1,0 +1,7 @@
+nifi-master:
+  ports:
+  - 8181:8181/tcp
+  restart: always
+  tty: true
+  image: flink:latest
+  stdin_open: true
