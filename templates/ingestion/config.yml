@@ -1,5 +1,4 @@
-name: GIOTTO INGESTION
-description: |
-  Giotto Ingestion
-version: v0.1-educaas1
+name: "Giotto DASHBOARD"
+description: "Giotto Visualization dashboard"
+version: "4.6.3-rancher1"
 category: IoT
