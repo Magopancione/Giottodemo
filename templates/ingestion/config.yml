@@ -1,5 +1,5 @@
-name: GIOTTO INGESTION
+name: GIOTTO Real Time Processing
 description: |
-  Giotto INGESTION
-version: v0.1-educaas1
+  Giotto Real Time Processing
+version: v0.59.0
 category: IoT
