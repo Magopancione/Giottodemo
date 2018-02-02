@@ -1,0 +1,9 @@
+nifi-master:
+  ports:
+  - 8081:8080/tcp
+  restart: always
+  tty: true
+  image: apache/nifi:1.4.0
+  stdin_open: true
+  expose:
+    - "6123"
