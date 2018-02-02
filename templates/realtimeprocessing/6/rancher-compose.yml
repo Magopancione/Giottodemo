@@ -6,5 +6,5 @@
   minimum_rancher_version: v0.59.0
   maintainer: "Patrick Wiener <patrick.wiener@hs-karlsruhe.de>"
   uuid: flink-0
-nifi-master:
+Flink:
   scale: 1
