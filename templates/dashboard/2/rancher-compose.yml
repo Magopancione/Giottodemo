@@ -7,14 +7,14 @@
       description: "Link to elasticsearch service or stack/service"
       label: "Elasticsearch source"
       type: "service"
-      required: true
+      required: false
       default: "es/elasticsearch-clients"
     - variable: "public_port"
       label: "Public Port"
       description: "Unique public port for Kibana"
       type: "int"
       default: 80
-      required: true
+      required: false
 
 nginx-proxy:
   metadata:
