@@ -6,6 +6,6 @@ nifi-master:
     PASSWORD: Pa22word
     ISMANAGER: 'true'
   tty: true
-  image: clemenko/nifi
+  image: apache/nifi:1.4.0
   stdin_open: true
   net: host
