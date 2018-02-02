@@ -4,9 +4,11 @@
   description: "Kibana: Explore & Visualize Your Data"
 nifi-master:
   scale: 1
+nifi-node:
+  scale: 1
 nginx-proxy:
   metadata:
     nginx:
       conf:
         servername: "nifi-master"
-        upstream_port: 8081
+        upstream_port: 8080
