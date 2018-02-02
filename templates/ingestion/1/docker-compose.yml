@@ -1,8 +1,29 @@
-nifi-master:
+kibana-vip:
   ports:
-  - 8881:8081/tcp
-  - 8882:8080/tcp
+  - 80:8081
   restart: always
-  image: apache/nifi:1.4.0
+  tty: true
+  image: rancher/load-balancer-service
+  links:
+  - nginx-proxy:kibana4
   stdin_open: true
-  net: host
+nginx-proxy-conf:
+  image: rancher/nginx-conf:v0.2.0
+  command: "-backend=rancher --prefix=/2015-07-25"
+  labels:
+    io.rancher.container.hostname_override: container_name
+nginx-proxy:
+  image: rancher/nginx:v1.9.4-3
+  volumes_from:
+    - nginx-proxy-conf
+  labels:
+    io.rancher.container.hostname_override: container_name
+    io.rancher.sidekicks: nginx-proxy-conf,kibana4
+kibana4:
+  restart: always
+  tty: true
+  image: apache/nifi:1.4.0
+  net: "container:nginx-proxy"
+  stdin_open: true
+  labels:
+    io.rancher.container.hostname_override: container_name

@@ -1,6 +1,17 @@
 .catalog:
   name: "Kibana"
-  version: "7.4.0-rancher1"
+  version: "84.1.1-rancher1"
   description: "Kibana: Explore & Visualize Your Data"
-nifi-master:
-  scale: 1
+  questions:
+    - variable: "elasticsearch_source"
+      description: "Link to elasticsearch service or stack/service"
+      label: "Elasticsearch source"
+      type: "service"
+      required: true
+      default: "es/elasticsearch-clients"
+nginx-proxy:
+  metadata:
+    nginx:
+      conf:
+        servername: "kibana"
+        upstream_port: 8080
